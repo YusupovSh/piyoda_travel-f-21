@@ -1,0 +1,89 @@
+.turi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-search__table{
+        display: flex;
+        border: 1px solid #ebebeb;
+        padding: 20px;
+        display: table;
+        width: 100%;
+        margin-top: 30px;
+    }
+    &-search__sections{
+        display: flex;
+        column-gap: 15px;
+    }
+    &-box{
+        display: flex;
+        flex-direction: column;
+        row-gap: 7px;
+
+        &__items{
+            display: flex;
+            column-gap: 7px
+        }
+        &__item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 127px;
+            height: 48px;
+            background-color: #eee;
+            padding: 10px;
+
+            img{
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+    &-item{
+        width: 159px;
+        height: 48px;
+        border: 1px solid #ebebeb;
+        border-radius: 2px;
+        margin-top: 6px;
+        display: flex;
+        align-items: center;
+        padding-left: 10px
+
+    }
+    &-selects{
+        display: flex;
+        column-gap: 5px;
+        margin-top: 6px;
+    }
+    &-select1{
+        width: 217px;
+        height: 48px;
+        padding-left: 2px;
+        color: #999;
+        border-radius: 2px;
+        font-size: 14px;
+        border: 1px solid #999;
+    }
+    &-select2{
+        width: 63px;
+        height: 48px;
+        border: 1px solid #ebebeb;
+        border-radius: 2px;
+        padding-left: 5px;
+    }
+    &-button{
+        width: 159px;
+        height: 48px;
+        color: #fff;
+        background-color: #10c0e7;
+        border: 1px solid #10c0e7;
+        transition: all 0.2s ease-in-out;
+        margin-top: 24px;
+        
+
+        &:hover{
+            background-color: #fff;
+            color: #10c0e7;
+        }
+    }
+}

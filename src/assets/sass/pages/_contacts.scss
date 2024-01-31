@@ -1,0 +1,43 @@
+.contacts{
+
+    &-header{
+        width: 100%;
+        height: 237px;
+        background: url(https://www.a-travel.uz/themes/default/images/common/page-contacts-bg.jpg);
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        margin-bottom: 70px;
+
+        h2{
+            color: #fff;
+            font-size: 46px;
+            margin-left: 160px;
+            font-family: 'Nunito' sans-serif;
+        }
+    }
+    &-about{
+        display: flex;
+        column-gap: 180px;
+        margin-bottom: 90px;
+
+        &__item{
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            font-size: 18px;
+            color: #4a4a4a;
+            font-family: 'Roboto';
+            column-gap: 10px;
+
+            &:not(:last-child){
+                margin-bottom: 45px;
+            }
+        }
+        &__icons{
+            display: flex;
+            justify-content: flex-end;
+            column-gap: 20px;
+        }
+    }
+}
