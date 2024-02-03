@@ -71,6 +71,8 @@ const TelegramBotForm = ({ modalInfo, modal ,setModal}) => {
         alert('iltimos Hamma joylarni toldiring')
       }
       else {
+
+        
         await axios.post(`https://api.telegram.org/bot${apiToken}/sendMessage`, {
           chat_id: chatId,
           text: message,
