@@ -1,17 +1,15 @@
-import React , { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
-// const [dropdown,setDropdown] = useState(false)
-
-// function DropdownToggle(){
-//     setDropdown(true)
-// }
-
-// useEffect(function(){
-//     DropdownToggle()
-// },[dropdown])
-
 function Banner() {
+    const [dropdown,setDropdown] = useState(false)
+    function toggleDropdown(){
+        setDropdown(!dropdown)
+    }
+    
+    useEffect(function(){
+        toggleDropdown
+    },[dropdown])
   return (
     <section className="banner">
         <div className="container">
@@ -34,7 +32,7 @@ function Banner() {
                             <input  className='banner__form__avia-wrapper-inputs-input' type="text" placeholder='Откуда *' />
                             <input  className='banner__form__avia-wrapper-inputs-input' type="text" placeholder='Куда *' />
                             <input  className='banner__form__avia-wrapper-inputs-input' type="text" placeholder='Дата *' />
-                            <div className='banner__form__avia-wrapper-inputs-button'>
+                            <div onClick={toggleDropdown} className='banner__form__avia-wrapper-inputs-button'>
                                 <div className='banner__form__avia-wrapper-inputs-button-wrap'>
                                     <p>Пассажиры:</p>
                                     <p>1</p>
@@ -45,7 +43,7 @@ function Banner() {
                             </div>
                             
                         </div>
-                        <div  className="banner__form__avia__dropdown__all">
+                        <div  className={dropdown? 'banner__form__avia__dropdown__all open':"banner__form__avia__dropdown__all"}>
                             <div className="banner__form__avia__dropdown">
                                 <div className="banner__form__avia__dropdown__top">
                                     <div className="banner__form__avia__dropdown-wrapper">

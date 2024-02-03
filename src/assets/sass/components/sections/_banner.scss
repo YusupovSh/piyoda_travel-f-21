@@ -16,7 +16,7 @@
     &-row{
         display: flex;
         flex-direction: column;
-        gap: 51px;
+        gap: 50px;
     }
     &__toptitle{
         margin-top: 150px;
@@ -149,7 +149,7 @@
                 padding: 15px;
                 border: 1px solid #444444;
                 position: absolute;
-                right: 0;
+                right: 40px;
                 &__top{
                     display: flex;
                     flex-direction: column;

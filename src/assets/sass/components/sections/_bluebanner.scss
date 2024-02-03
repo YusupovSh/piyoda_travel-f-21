@@ -1,0 +1,53 @@
+.bluebanner{
+    background-image: url('/images/bluebanner/bluebanner-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    height: 600px;
+    font-family: 'Roboto',sans-serif;
+    &-row{
+        display: flex;
+        align-items: center;
+    }
+    &__left{
+        display: flex;
+        flex-direction: column;
+        &-title{
+            font-weight: 700;
+            font-size: 41px;
+            color: #fff;
+            line-height: 155%;
+            margin-bottom: 15px;
+        }
+        &-text{
+            font-weight: 600;
+            color: #fff;
+            line-height: 160%;
+            font-size: 23px;
+            margin-bottom: 20px;
+        }
+        &-wrap{
+            display: flex;
+            gap: 40px;
+        }
+        &-border{
+            width: 83px;
+            height: 6px;
+            background-color: #fd9704;
+            transform: translateX(-100px);
+        }
+        &-icon svg{
+            width: 45px;
+            color: #fff;
+            cursor: pointer;
+            height: 45px;
+            transition: all 0.2s ease-in-out;
+            &:hover{
+                color: #fd7e14;
+            }
+        }
+    }
+}

@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import DateIcon from '../../assets/icons/categorie/date-icon.svg'
 import FoodIcon from '../../assets/icons/categorie/food-icon.svg'
 import PlaneIcon from '../../assets/icons/categorie/plane-icon.svg'
+import { NavLink } from 'react-router-dom'
+import { CloseOutlined } from '@ant-design/icons'
+import TelegramBotForm from '../../constants/telegram'
 function Categories() {
     const categorie = [
         {
@@ -271,9 +274,64 @@ function Categories() {
         }
     ]
 
+
+
+
   return (
+    <>
     <div className='categorie'>
         <div className="container">
+            {/* <div className="categorie__modal-backgorund"></div> */}
+            {/* <div className="categorie__modal-container">
+                {
+                    categorie.map((item)=>(
+                    <div className="categorie__modal show" key={item.id}>
+                        <div className="categorie__modal-body">
+                            <div className="categorie__modal__toptitle">
+                            <h3 className="categorie__modal__toptitle-title">Заказать тур</h3>
+                            <CloseOutlined className='categorie__modal__toptitle-icon' />
+                            </div>
+                            <form className='categorie__modal-form' method='get'>
+                                <hr />
+                                <div className="categorie__modal__info">
+                                <h3 className="categorie__modal__info-title">{item.card_name}</h3>
+                                <p className="categorie__modal__info-price">{item.img_price} {item.img_people}</p>
+                                <div className="categorie__offer__card__wrapper">
+                                    <div className="categorie__offer__card__wrapper-wrap">
+                                        <img src={DateIcon} alt="" />
+                                        <p className="categorie__offer__card__wrapper-date">{item.card_data} - {item.card_data_day} </p>
+                                    </div>
+                                    <div className="categorie__offer__card__wrapper-wrap">
+                                        <img src={PlaneIcon} alt="" />
+                                        <p className="categorie__offer__card__wrapper-fly">{item.card_flymesta} </p>
+                                    </div>
+                                    <div className="categorie__offer__card__wrapper-wrap">
+                                        <img src={FoodIcon} alt="" />
+                                        <p className="categorie__offer__card__wrapper-fly">{item.card_food}</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <hr />
+                                <div className="categorie__modal__form">
+                                <div className="categorie__modal__form-wrap">
+                                    <label htmlFor="name">Ваше имя</label>
+                                    <input className='input-name' type="text" name='name' />
+                                </div>
+                                <div className="categorie__modal__form-wrap">
+                                    <label htmlFor="number">Ваш телефон</label>
+                                    <input className='input-number' type="text" name='number' placeholder='+998' />
+                                </div>
+                                <div className="categorie__modal-button">
+                                    <button className='categorie__modal__form-btn'>Отправить</button>
+                                </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    ))
+                }
+            </div> */}
+            <TelegramBotForm categorie={categorie}/>
             <div className="categorie-row">
                 <div className="categorie__toptitle">
                     <div className="categorie__toptitle-wrap">
@@ -311,7 +369,9 @@ function Categories() {
                                     <div className="categorie__offer__card__wrapper">
                                         <div className="categorie__offer__card__wrapper-wrap">
                                             <img src={DateIcon} alt="" />
-                                            <p className="categorie__offer__card__wrapper-date">{item.card_data} - {item.card_data_day} </p>
+                                            <p className="categorie__offer__card__wrapper-date">{item.card_data} </p>
+                                            -
+                                            <p className="categorie__offer__card__wrapper-day">{item.card_data_day} </p>
                                         </div>
                                         <div className="categorie__offer__card__wrapper-wrap">
                                             <img src={PlaneIcon} alt="" />
@@ -323,50 +383,18 @@ function Categories() {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                                </div>
                             ))
                         }
-                        {/* <div className="categorie__offer__card">
-                            <div className="categorie__offer__card-content">
-                                <div className="categorie__offer__card-imginfo">
-                                    <div className="categorie__offer__card-imginfo-wrap">
-                                        <p className="categorie__offer__card-imginfo-price">8 680 000</p>
-                                        <p className="categorie__offer__card-imginfo-people">за 1x</p>
-                                    </div>
-                                    <div className="categorie__offer__card-imginfo-wrap2">
-                                        <p className="categorie__offer__card-imginfo-title">ОАЭ</p>
-                                    </div>
-                                </div>
-                                <div className="categorie__offer__card__image">
-                                    <img src='../../../public/images/categorie/oae-img2.jpg' alt="" />
-                                </div>
-                            </div>
-                            <div className="categorie__offer__card-info">
-                                <div className="categorie__offer__card__toptitle">
-                                    <h3 className="categorie__offer__card__toptitle-title">ОАЭ</h3>
-                                </div>
-                                <div className="categorie__offer__card__wrapper">
-                                    <div className="categorie__offer__card__wrapper-wrap">
-                                        <img src={DateIcon} alt="" />
-                                        <p className="categorie__offer__card__wrapper-date">04.11.2023 - 7 ночей </p>
-                                    </div>
-                                    <div className="categorie__offer__card__wrapper-wrap">
-                                        <img src={PlaneIcon} alt="" />
-                                        <p className="categorie__offer__card__wrapper-fly">вылет из Ташкента </p>
-                                    </div>
-                                    <div className="categorie__offer__card__wrapper-wrap">
-                                        <img src={FoodIcon} alt="" />
-                                        <p className="categorie__offer__card__wrapper-fly">завтрак + ужин</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> */}
-                        
                     </div>
+                        <div className="categorie__offer-button">
+                            <NavLink to='/tour'><button className='categorie__offer-button-btn'>Показать еще</button></NavLink>                        
+                        </div>
                 </div>
             </div>
         </div>
     </div>
+    </>
   )
 }
 

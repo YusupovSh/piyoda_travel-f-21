@@ -7,7 +7,7 @@ function Header() {
         <div className='container'>
             <div className="header-row">
                 <div className="header-logo">
-                    <Link to='/'><h1 className='header-logo-title'>Piyoda-Travel</h1></Link>
+                    <Link to='/'><h1  className='header-logo-title'>Piyoda-Travel</h1></Link>
                 </div>
                 <div className="header-background"></div>
                 <nav className="header__nav">
