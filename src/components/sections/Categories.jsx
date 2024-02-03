@@ -9,7 +9,7 @@ function Categories() {
     const categorie = [
         {
             id: 1,
-            img: '../../../public/images/categorie/tursya-img1.png',
+            img: '/images/categorie/tursya-img1.png',
             img_title: 'ТУРЦИЯ',
             img_price: '8 680 000',
             img_people: 'за 1x',
@@ -21,7 +21,7 @@ function Categories() {
         },
         {
             id: 2,
-            img: '../../../public/images/categorie/tursiya-img2.png',
+            img: '/images/categorie/tursiya-img2.png',
             img_title: 'ТУРЦИЯ',
             img_price: '10 580 000',
             img_people: 'за 1x',
@@ -33,7 +33,7 @@ function Categories() {
         },
         {
             id: 3,
-            img: '../../../public/images/categorie/tursiya-img3.png',
+            img: '/images/categorie/tursiya-img3.png',
             img_title: 'ТУРЦИЯ',
             img_price: '7 100 000',
             img_people: 'за 1x',
@@ -45,7 +45,7 @@ function Categories() {
         },
         {
             id: 4,
-            img: '../../../public/images/categorie/tursiya-img4.png',
+            img: '/images/categorie/tursiya-img4.png',
             img_title: 'ТУРЦИЯ',
             img_price: '7 800 000',
             img_people: 'за 1x',
@@ -57,7 +57,7 @@ function Categories() {
         },
         {
             id: 5,
-            img: '../../../public/images/categorie/vetnam-img1.png',
+            img: '/images/categorie/vetnam-img1.png',
             img_title: 'ВЬЕТНАМ',
             img_price: '12 177 000',
             img_people: 'за 1x',
@@ -69,7 +69,7 @@ function Categories() {
         },
         {
             id: 6,
-            img: '../../../public/images/categorie/katar-img1.png',
+            img: '/images/categorie/katar-img1.png',
             img_title: 'КАТАР',
             img_price: '5 602 000',
             img_people: 'за 1x',
@@ -81,7 +81,7 @@ function Categories() {
         },
         {
             id: 7,
-            img: '../../../public/images/categorie/oae-img1.png',
+            img: '/images/categorie/oae-img1.png',
             img_title: 'ОАЭ',
             img_price: '6 376 000',
             img_people: 'за 1x',
@@ -93,7 +93,7 @@ function Categories() {
         },
         {
             id: 8,
-            img: '../../../public/images/categorie/vetnam-img2.png',
+            img: '/images/categorie/vetnam-img2.png',
             img_title: 'ВЬЕТНАМ',
             img_price: '13 900 000',
             img_people: 'за 1x',
@@ -105,7 +105,7 @@ function Categories() {
         },
         {
             id: 9,
-            img: '../../../public/images/categorie/umra-img1.png',
+            img: '/images/categorie/umra-img1.png',
             img_title: 'УМРА',
             img_price: '19 150 000',
             img_people: 'за 1x',
@@ -117,7 +117,7 @@ function Categories() {
         },
         {
             id: 10,
-            img: '../../../public/images/categorie/tursiya-img5.png',
+            img: '/images/categorie/tursiya-img5.png',
             img_title: 'ТУРЦИЯ',
             img_price: '7 300 000',
             img_people: 'за 1x',
@@ -129,7 +129,7 @@ function Categories() {
         },
         {
             id: 11,
-            img: '../../../public/images/categorie/egipet-img2.png',
+            img: '/images/categorie/egipet-img2.png',
             img_title: 'ЕГИПЕТ',
             img_price: '6 900 000',
             img_people: 'за 1x',
@@ -142,7 +142,7 @@ function Categories() {
         ,
         {
             id: 12,
-            img: '../../../public/images/categorie/tursiya-img6.png',
+            img: '/images/categorie/tursiya-img6.png',
             img_title: 'ТУРЦИЯ',
             img_price: '9 400 000',
             img_people: 'за 1x',
@@ -154,7 +154,7 @@ function Categories() {
         },
         {
             id: 13,
-            img: '../../../public/images/categorie/umra-img2.png',
+            img: '/images/categorie/umra-img2.png',
             img_title: 'Умра',
             img_price: '19 500 000',
             img_people: 'за 1x',
@@ -166,7 +166,7 @@ function Categories() {
         },
         {
             id: 14,
-            img: '../../../public/images/categorie/oae-img2.png',
+            img: '/images/categorie/oae-img2.png',
             img_title: 'ОАЭ',
             img_price: '4 500 000',
             img_people: 'за 1x',
@@ -178,7 +178,7 @@ function Categories() {
         },
         {
             id: 15,
-            img: '../../../public/images/categorie/tursiya-img7.png',
+            img: '/images/categorie/tursiya-img7.png',
             img_title: 'ТУРЦИЯ',
             img_price: '5 200 000',
             img_people: 'за 1x',
@@ -190,7 +190,7 @@ function Categories() {
         },
         {
             id: 16,
-            img: '../../../public/images/categorie/malaysiya-img1.png',
+            img: '/images/categorie/malaysiya-img1.png',
             img_title: 'МАЛАЙЗИЯ ',
             img_price: '14 000 000',
             img_people: 'за 1x',
@@ -202,7 +202,7 @@ function Categories() {
         },
         {
             id: 17,
-            img: '../../../public/images/categorie/vetnam-img3.png',
+            img: '/images/categorie/vetnam-img3.png',
             img_title: 'ВЬЕТНАМ ',
             img_price: '15 000 000',
             img_people: 'за 1x',
@@ -214,7 +214,7 @@ function Categories() {
         },
         {
             id: 18,
-            img: '../../../public/images/categorie/azerbayjan-img1.png',
+            img: '/images/categorie/azerbayjan-img1.png',
             img_title: 'АЗЕРБАЙДЖАН ',
             img_price: '8 600 000',
             img_people: 'за 1x',
@@ -226,7 +226,7 @@ function Categories() {
         },
         {
             id: 19,
-            img: '../../../public/images/categorie/gruziya-img1.png',
+            img: '/images/categorie/gruziya-img1.png',
             img_title: 'ГРУЗИЯ ',
             img_price: '5 000 000',
             img_people: 'за 1x',
@@ -238,7 +238,7 @@ function Categories() {
         },
         {
             id: 20,
-            img: '../../../public/images/categorie/tursiya-img8.png',
+            img: '/images/categorie/tursiya-img8.png',
             img_title: 'ТУРЦИЯ ',
             img_price: '8 000 000',
             img_people: 'за 1x',
@@ -250,7 +250,7 @@ function Categories() {
         },
         {
             id: 21,
-            img: '../../../public/images/categorie/oae-img3.png',
+            img: '/images/categorie/oae-img3.png',
             img_title: 'ОАЭ ',
             img_price: '7 000 000',
             img_people: 'за 1x',
@@ -263,7 +263,7 @@ function Categories() {
 
         {
             id: 22,
-            img: '../../../public/images/categorie/egipet-img2.png',
+            img: '/images/categorie/egipet-img2.png',
             img_title: 'ЕГИПЕТ',
             img_price: '7 500 000',
             img_people: 'за 1x',
@@ -275,7 +275,7 @@ function Categories() {
         },
         {
             id: 21,
-            img: '../../../public/images/categorie/oae-img3.png',
+            img: '/images/categorie/oae-img3.png',
             img_title: 'ОАЭ ',
             img_price: '7 000 000',
             img_people: 'за 1x',
@@ -287,7 +287,7 @@ function Categories() {
         },
         {
             id: 21,
-            img: '../../../public/images/categorie/oae-img3.png',
+            img: '/images/categorie/oae-img3.png',
             img_title: 'ОАЭ ',
             img_price: '7 000 000',
             img_people: 'за 1x',
