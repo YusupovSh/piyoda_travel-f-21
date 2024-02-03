@@ -93,7 +93,7 @@ const TelegramBotForm = ({ modalInfo, modal ,setModal}) => {
   console.log(modalInfo.id);
 
   return (
-    <div className={modal ? "categorie__modal-container" : "none"}>
+    <div className={modal ? "categorie__modal-container" : "none"}onClick={() => setModal(false)} >
       <div className="categorie__modal" >
         <div className="categorie__modal-body">
           <div className="categorie__modal__toptitle">
