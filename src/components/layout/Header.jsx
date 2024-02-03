@@ -1,13 +1,23 @@
-import React from 'react'
+import { MenuOutlined } from '@ant-design/icons';
+import React, { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
 function Header() {
+    const [modal, setModal] = useState(false);
+    function togglDropdown(){
+        setModal(!modal)
+    }
+    
+    useEffect(function(){
+        togglDropdown
+    },[modal])
+
   return (
     <header className="header">
         <div className='container'>
             <div className="header-row">
                 <div className="header-logo">
-                    <Link to='/'><h1 className='header-logo-title'>Piyoda-Travel</h1></Link>
+                    <Link to='/'><h1  className='header-logo-title'>Piyoda-Travel</h1></Link>
                 </div>
                 <div className="header-background"></div>
                 <nav className="header__nav">
@@ -22,11 +32,26 @@ function Header() {
                     <NavLink to='/visa' className='header__nav-item'>Визы</NavLink>
                     <NavLink to='/straxovaniya' className='header__nav-item'>Страхование</NavLink>
                     <NavLink to='/contact' className='header__nav-item'>Контакты</NavLink>
+                    <div className="header-hamburger" onClick={togglDropdown}>
+                    <MenuOutlined />
+                    </div>
                 </nav>
+
+                    
+            </div>
+        </div>
+
+        <div className={modal? 'header-menu__modal active':'header-menu__modal'}>
+            <div className="header-menu__links">
+                <NavLink to='/aviabilet' className='header__nav-item menu-link'>Авиабилеты</NavLink>
+                <NavLink to='/tour' className='header__nav-item menu-link'>Туры</NavLink>
+                <NavLink to='/visa' className='header__nav-item menu-link'>Визы</NavLink>
+                <NavLink to='/straxovaniya' className='header__nav-item menu-link'>Страхование</NavLink>
+                <NavLink to='/contact' className='header__nav-item menu-link'>Контакты</NavLink>
             </div>
         </div>
     </header>
   )
 }
 
-export default Header
+export default Header;

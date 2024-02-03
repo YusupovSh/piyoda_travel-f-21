@@ -1,0 +1,78 @@
+.footer{
+    padding: 60px 0;
+    background-color: #f3f3f3;
+
+    &-row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-cards{
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+
+        @media screen and (max-width: 1120px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 0 auto;
+            gap: 50px;
+        }
+    }
+    &-card{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        &__title{
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #145ce6;
+            font-weight: 800;
+        }
+        &__subtitle{
+            width: 148px;
+            font-weight: 600;
+            font-size: 14px;
+            font-family: 'Roboto';
+            margin-top: 10px;
+        }
+        &__link{
+            color: #4a4a4a;
+            font-weight: 800;
+            font-size: 16px;
+
+            &:hover{
+                text-decoration: underline ;
+            }
+
+            &:not(:last-child){
+                margin-bottom: 10px;
+            }
+        }
+        &__location{
+            font-size: 18px;
+            font-weight: 200;
+        }
+    }
+    &-icons{
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    &-icon{
+        svg {
+            width: 26px;
+            color: #000000;
+            cursor: pointer;
+            height: 45px;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                color: #fd7e14;
+            }
+        }
+    }
+}

@@ -14,12 +14,34 @@
             font-size: 46px;
             margin-left: 160px;
             font-family: 'Nunito' sans-serif;
+
+            @media screen and (max-width: 540px) {
+                font-size: 32px;
+                margin-left: 40px;
+             }
+             @media screen and (max-width: 400px) {
+                font-size: 28px;
+             }
         }
     }
     &-about{
         display: flex;
         column-gap: 180px;
         margin-bottom: 90px;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 555px) {
+           align-items: center;
+           justify-content: center;
+        }
+
+        &__left{
+
+            @media screen and (max-width: 555px) {
+                align-items: center;
+                justify-content: center;
+             }
+        }
 
         &__item{
             display: flex;
@@ -29,6 +51,7 @@
             color: #4a4a4a;
             font-family: 'Roboto';
             column-gap: 10px;
+            margin-top: 35px;
 
             &:not(:last-child){
                 margin-bottom: 45px;
@@ -38,6 +61,11 @@
             display: flex;
             justify-content: flex-end;
             column-gap: 20px;
+
+            @media screen and (max-width: 555px) {
+                align-items: center;
+                justify-content: center;
+             }
         }
     }
 }

@@ -4,9 +4,9 @@ import { Footer, Header, Main } from './components/_index'
 function App() {
   return (
     <>
-      <Header/>
-      <Main/>
-      <Footer/>
+      <Header />
+      <Main />
+      <Footer />
     </>
   )
 }

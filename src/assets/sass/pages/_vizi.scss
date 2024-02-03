@@ -13,6 +13,14 @@
             font-size: 46px;
             margin-left: 160px;
             font-family: 'Nunito' sans-serif;
+
+            @media screen and (max-width: 540px) {
+               font-size: 32px;
+               margin-left: 40px;
+            }
+            @media screen and (max-width: 400px) {
+               font-size: 28px;
+            }
         }
     }
 
@@ -24,16 +32,32 @@
             display: flex;
             padding: 72px 0;
 
+            @media screen and (max-width: 1200px) {
+                flex-direction: column-reverse;
+                flex-wrap: wrap;
+                gap: 40px;
+            }
+
             p{
                 width: 759px;
                 color: #212529;
                 font-size: 17px;
                 font-family: 'Roboto';
                 font-weight: 300;
+
+                @media screen and (max-width: 1200px) {
+                    width: 100%;
+                }
             }
+
+            
             &img{
                 width: 400px;
                  height: 230px;
+
+                 @media screen and (max-width: 500px) {
+                    display: none;
+                }
 
             img{
                 width: 100%;
