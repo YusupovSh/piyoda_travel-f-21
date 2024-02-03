@@ -70,6 +70,7 @@ function Banner() {
                                         </div>
                                     </div>
                                     <div className="banner__form__avia__dropdown-wrapper">
+                                        
                                         <div className="banner__form__avia__dropdown__texts">
                                             <p className='banner__form__avia__dropdown__texts-toptext'>Младенцы</p>
                                             <p className='banner__form__avia__dropdown__texts-subtext'>До 2 лет, без места</p>
